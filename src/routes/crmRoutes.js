@@ -4,7 +4,8 @@ var router = express.Router();
 import  { addNewContact, 
             getContacts, 
             getContactsWithID, 
-            updateContact 
+            updateContact,
+            deleteContact 
 } from '../controllers/crmController';
 
 
@@ -25,11 +26,9 @@ module.exports = (app) => {
     .get(getContactsWithID)
 
     //put request
-    .put(updateContact); 
+    .put(updateContact) 
 
-    app.delete((req, res) => {
-        res.send("DELETE request successfull")
-    });
+    .delete(deleteContact);
     
 }
 
