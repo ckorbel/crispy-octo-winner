@@ -31,22 +31,3 @@ module.exports = (app) => {
     .delete(deleteContact);
     
 }
-
-// export default routes;
-
-// module.exports = app;
-
-    // app.route('/contact')
-    // .get((req, res) => 
-    // res.send("GET request successfull!!"))
-
-    // .post.route((req, res) => 
-    // res.send("POST request successfull!!"));
-
-    // //new route
-    // app.route('/contact/:contactId')
-    // .put((req, res) => 
-    // res.send("PUT request successfull!!"))
-
-    // .delete.route((req, res) => 
-    // res.send("DELETE request successfull!!"));
